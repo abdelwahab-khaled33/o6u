@@ -1,0 +1,21 @@
+{
+  "name": "o6u-exam-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "6th of October University Secure Exam Platform",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "dev": "npm run dev --workspaces --parallel",
+    "dev:api": "npm run dev --workspace=@fable/api",
+    "dev:web": "npm run dev --workspace=@fable/web",
+    "lint": "npm run lint --workspaces --if-present",
+    "test": "npm run test --workspaces --if-present"
+  },
+  "keywords": ["exam", "university", "o6u", "proctoring"],
+  "author": "6th of October University",
+  "license": "MIT"
+}
